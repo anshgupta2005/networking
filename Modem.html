@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html><!-- #BeginTemplate "/Templates/template.dwt" -->
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>NetWork Components</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html;">
+<SCRIPT language=JavaScript> 
+function makeArray() {
+     for (i = 0; i<makeArray.arguments.length; i++)
+         this[i] = makeArray.arguments[i];
+ }
+ 
+function getFullYear(d) {
+    var y = d.getYear();
+    if (y < 1000) {y += 1900};
+    return y;
+}
+ 
+//var zone = "EDT";
+var days = new makeArray("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+var months = new makeArray("January","February","March","April","May","June","July","August","September","October","November","December");
+ 
+function format_time(t) {
+ 
+    var Day = t.getDay();
+    var Date = t.getDate();
+    var Month = t.getMonth();
+    var Year = t.getFullYear();
+ 
+    timeString = "";
+    timeString += days[Day];
+    timeString += ", ";
+    timeString += " ";
+    timeString += months[Month];
+    timeString += " ";
+    timeString += Date;
+    timeString += ", ";
+    timeString += " ";
+    timeString += Year;
+ 
+   return timeString;
+ }
+</SCRIPT>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td bgcolor="#395080" height="50" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td width="50%" valign="top"><img name="companyname" src="images/companyname.jpg" width="247" height="50" border="0"></td>
+          <td width="50%" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="15">
+              <tr> 
+                <td valign="top" align="right" class="menutext"> 
+                  <script language=JavaScript>
+			<!--
+			d = new Date();
+			document.write(format_time(d));
+			// -->
+		</script>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="98" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" width="82%"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+              <tr bgcolor="#EAEBE4"> 
+                <td height="73" valign="top" bgcolor="#EAEBE4"><img src="images/spacer.gif" width="1" height="73"></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="25" bgcolor="#395080" class="menutext" nowrap width="98%">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Home.html" class="menutext">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="AboutUS.html" class="menutext">About  Us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Gallery.html" class="menutext">Gallery </a> 
+                </td>
+                <td height="25" width="22" valign="bottom"><img name="triangle1" src="images/triangle1.jpg" width="22" height="25" border="0"></td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" align="right" width="340"><img name="graphic1" src="images/graphic1.jpg" width="340" height="98" border="0"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="72%" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr>
+          <td valign="top" width="152" bgcolor="#395080"> 
+            <table width="152" border="0" cellspacing="0" cellpadding="0" height="100%">
+              <tr> 
+                <td width="152" bgcolor="#395080" height="140" valign="top"><img name="graphic2" src="images/graphic2.jpg" width="152" height="128" border="0"></td>
+              </tr>
+              <tr> 
+                <td valign="top" bgcolor="#395080"> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3" height="100">
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td nowrap class="menutext"><a href="Data Communication.html"  class="menutext">Data Communication</a></td>
+                    </tr>
+                     <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="communication channels.html"  class="menutext">Communication Channels</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="transMedia.html" class="menutext">Transmission Media</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="Concentrators.html" class="menutext">Network Components 
+                        </a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="nettype.html" class="menutext">Network Type</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ICMP.html" class="menutext">ICMP</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ISDN.html" class="menutext">ISDN</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ISO OSI.html" class="menutext">ISO OSI Model</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="Modem.html" class="menutext">Modem</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="TCP & IP.html" class="menutext">TCP & IP</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="UDP.html" class="menutext">UDP</a></td>
+                    </tr>
+                    
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="InternetProtocol.html" class="menutext">IP Addresses</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ARP.html" class="menutext">ARP</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="RARP.html" class="menutext">RARP</a></td>
+                    </tr>
+                   
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" width="85%"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="20" height="100%">
+              <tr> 
+                <td valign="top" height="420" class="text"> <!-- #BeginEditable "content" -->
+                  <p><span class="title"> Modems   </span> </p>
+                  
+		
+		<p class="normaltext">
+		A modem (modulator-demodulator) is a device that modulates ananalog carrier signal to encode digital information, and also demodulates such a carrier signal to decode the transmitted information. The goal is to produce a signal that can be transmitted easily and decoded to reproduce the original digital data. Modems can be used over any means of transmitting analog signals, from light emitting diodes to radio. The most familiar example is a voice band modem that turns the digital data of a personal computer into modulatedelectrical signals in the voice frequency range of a telephone channel. These signals can be transmitted over telephone lines and demodulated by another modem at the receiver side to recover the digital data.
+Modems are generally classified by the amount of data they can send in a given unit of time, usually expressed in bits per second (bit/s, or bps). Modems can alternatively be classified by their symbol rate, measured in baud. The baud unit denotes symbols per second, or the number of times per second the modem sends a new signal. For example, the ITU V.21 standard used audio frequency-shift keying, that is to say, tones of different frequencies, with two possible frequencies corresponding to two distinct symbols (or one bit per symbol), to carry 300 bits per second using 300 baud. 
+
+
+		<center><img  src="images/modem.jpg" ></center></p>
+		<p class="title">
+		 Modem Types
+		</p>
+		
+There are many types of modems, the most common are: 
+<ol type="i"   style="margin-left :30px">
+<li><b>Optical Modems</b><br >
+Uses optical fibre cable instead of wire. The modem converts the digital signal to pulses of light to be transmitted over optical lines. (more commonly called a media adapter or transceiver) 
+</li>
+<li><b>Short Haul Modems</b><br >
+Modems used to transmit over 20 miles or less. Modems we use at home or to connect computers together between different offices in the same building. 
+</li>
+<li><b>Acoustic Modem</b><br >
+A modem that coupled to the telephone handset with what looked like suction cups that contained a speaker and microphone. Used for connecting to hotel phones for travelling salespeople. 
+</li>
+<li><b>Smart Modem</b><br >
+Modem with a CPU (microprocessor) on board that uses the Hayes AT command set. This allows auto-answer & dial capability rather than manually dialing & answering. 
+</li>
+<li><b>Digital Modems</b><br >
+Converts the RS-232 digital signals to digital signals more suitable for transmission. (also called a media adapter or transceiver) 
+</li>
+<li><b>V.32 Modem</b><br >
+Milestone modem that used a 2400 Baud modem with 4 bit encoding. This results in a 9600 bps (bits per second) transfer rate. It brought the price of high speed modems below $5,000. 
+</li>
+
+</ol>
+
+			<p class="normaltext">
+		<center><img  src="images/modem1.jpg" ></center><br ><br >
+			<b>Baud</b> is the speed at which the Analog data is changing on the Voice Channel and bps is the speed that the decoded digital data is being transferred.	
+</p>
+		<p class="title">
+		Features of Modems
+		</p>
+		
+<ol    style="margin-left :30px">
+<li><b>Speed</b><br >
+The speed at which the modem can send data in bps (bits per second). Typically modem speeds are: 300, 600, 1200, 2400, 4800, 9600, 14.4K, 19.2K, 28.8K bps 
+</li>
+<li><b>Auto Dial /Redial</b><br >
+Smart Modems can dial the phone number and & auto redial if a busy signal is received. 
+</li>
+<li><b>Auto Answer</b><br >
+Most modems can automatically answer the phone when an incoming call comes in. They have Ring Detect capability. 
+</li>
+<li><b>Self-Testing</b><br >
+New modems have self-testing features. They can test the digital connection to the terminal /computer and the analog connection to a remote modem. They can also check the modem's internal electronics. 
+</li>
+<li><b>Voice over Data</b><br >
+Voice over Data modems allow a voice conversation to take place while data is being transmitted. This requires both the source and destination modems to have this feature. 
+</li>
+
+
+
+</ol>
+                                       
+                  <!-- #EndEditable --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="43" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="43">
+        <tr> 
+          <td width="152" height="23" bgcolor="#395080"><img src="images/spacer.gif" width="152" height="8"></td>
+          <td height="23" width="19" valign="top" align="right" bgcolor="#395080"><img name="triangle2" src="images/triangle2.jpg" width="25" height="25" border="0"></td>
+          <td height="23" bgcolor="#EAEBE4" width="92%" class="text" align="center" valign="middle" nowrap>
+           <a href="#" class="text">Web Design By :- Ansh Gupta, BTech CSE(AIML) MRSPTU, Bathinda</a> 
+            </td>
+        </tr>
+        <tr> 
+          <td height="20" bgcolor="#395080">&nbsp;</td>
+          <td height="20" bgcolor="#395080">&nbsp;</td>
+          <td height="20" bgcolor="#395080" valign="middle" align="center" class="footer"><a href="#" class ="footer">&nbsp;</a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>

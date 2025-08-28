@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html><!-- #BeginTemplate "/Templates/template.dwt" -->
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>NetWork Components</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html;">
+<SCRIPT language=JavaScript> 
+function makeArray() {
+     for (i = 0; i<makeArray.arguments.length; i++)
+         this[i] = makeArray.arguments[i];
+ }
+ 
+function getFullYear(d) {
+    var y = d.getYear();
+    if (y < 1000) {y += 1900};
+    return y;
+}
+ 
+//var zone = "EDT";
+var days = new makeArray("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+var months = new makeArray("January","February","March","April","May","June","July","August","September","October","November","December");
+ 
+function format_time(t) {
+ 
+    var Day = t.getDay();
+    var Date = t.getDate();
+    var Month = t.getMonth();
+    var Year = t.getFullYear();
+ 
+    timeString = "";
+    timeString += days[Day];
+    timeString += ", ";
+    timeString += " ";
+    timeString += months[Month];
+    timeString += " ";
+    timeString += Date;
+    timeString += ", ";
+    timeString += " ";
+    timeString += Year;
+ 
+   return timeString;
+ }
+</SCRIPT>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td bgcolor="#395080" height="50" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td width="50%" valign="top"><img name="companyname" src="images/companyname.jpg" width="247" height="50" border="0"></td>
+          <td width="50%" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="15">
+              <tr> 
+                <td valign="top" align="right" class="menutext"> 
+                  <script language=JavaScript>
+			<!--
+			d = new Date();
+			document.write(format_time(d));
+			// -->
+		</script>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="98" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" width="82%"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+              <tr bgcolor="#EAEBE4"> 
+                <td height="73" valign="top" bgcolor="#EAEBE4"><img src="images/spacer.gif" width="1" height="73"></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="25" bgcolor="#395080" class="menutext" nowrap width="98%">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Home.html" class="menutext">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="AboutUS.html" class="menutext">About  Us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Gallery.html" class="menutext">Gallery </a> 
+                </td>
+                <td height="25" width="22" valign="bottom"><img name="triangle1" src="images/triangle1.jpg" width="22" height="25" border="0"></td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" align="right" width="340"><img name="graphic1" src="images/graphic1.jpg" width="340" height="98" border="0"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="72%" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr>
+          <td valign="top" width="152" bgcolor="#395080"> 
+            <table width="152" border="0" cellspacing="0" cellpadding="0" height="100%">
+              <tr> 
+                <td width="152" bgcolor="#395080" height="140" valign="top"><img name="graphic2" src="images/graphic2.jpg" width="152" height="128" border="0"></td>
+              </tr>
+              <tr> 
+                <td valign="top" bgcolor="#395080"> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3" height="100">
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td nowrap class="menutext"><a href="Data Communication.html"  class="menutext">Data Communication</a></td>
+                    </tr>
+                     <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="communication channels.html"  class="menutext">Communication Channels</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="transMedia.html" class="menutext">Transmission Media</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="Concentrators.html" class="menutext">Network Components 
+                        </a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="nettype.html" class="menutext">Network Type</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ICMP.html" class="menutext">ICMP</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ISDN.html" class="menutext">ISDN</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ISOOSI.html" class="menutext">ISO OSI Model</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="Modem.html" class="menutext">Modem</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="TCP & IP.html" class="menutext">TCP & IP</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="UDP.html" class="menutext">UDP</a></td>
+                    </tr>
+                    
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="InternetProtocol.html" class="menutext">IP Addresses</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ARP.html" class="menutext">ARP</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="RARP.html" class="menutext">RARP</a></td>
+                    </tr>
+                   
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" width="85%"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="20" height="100%">
+              <tr> 
+                <td valign="top" height="420" class="text"> <!-- #BeginEditable "content" -->
+                  <p><span class="title">Address Resolution Protocol(ARP) </span> </p>
+                  <p class="normaltext">
+                  Address Resolution Protocol (ARP) resides in the bottom half of the Network layer. It can be considered a mechanism for mapping addresses between the Network logical addresses and MAC (Media Access Control) layer physical addresses. For example: the Network layer protocol IP is not aware of 48 bit MAC addresses such as Ethernet. Likewise the MAC layer protocol such as Ethernet is not aware of 32 bit IP addresses. ARP provides the mechanism to map MAC addresses to IP addresses in a temporary memory space called the ARP cache. <br />
+The ARP cache is a dynamic cache and the information is stored only for 120 seconds. After which it is discarded. In this manner, the ARP cache remains small. The ARP cache can be viewed by using the "ARP -a" command at a command prompt. This should display the current ARP cache. If nothing is displayed, then most likely your computer hasn't communicated on the network for the past 120 seconds. Ping another device on the network and see if the ARP cache has changed. <br />
+The basic operation of ARP is as follows. When the IP layer wants to communicate with another device on the network, it checks the ARP cache to see if there is a match with an Ethernet address. If there is no matching entry in the ARP cache, an ARP broadcast datagram is sent out that basically says "Does anybody know whose Ethernet address belongs to this IP address?". The receiving station that has the IP address, responds with an ARP datagram that says "This is my IP address and here is my Ethernet address". The ARP cache is updated and the original IP layer information is then passed on to the MAC layer for processing.<br />
+
+
+		</p>
+                                       
+                  <!-- #EndEditable --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="43" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="43">
+        <tr> 
+          <td width="152" height="23" bgcolor="#395080"><img src="images/spacer.gif" width="152" height="8"></td>
+          <td height="23" width="19" valign="top" align="right" bgcolor="#395080"><img name="triangle2" src="images/triangle2.jpg" width="25" height="25" border="0"></td>
+          <td height="23" bgcolor="#EAEBE4" width="92%" class="text" align="center" valign="middle" nowrap>
+          <a href="#" class="text">Web Design By :- Ansh Gupta, BTech CSE(AIML) MRSPTU, Bathinda</a> 
+            </td>
+        </tr>
+        <tr> 
+          <td height="20" bgcolor="#395080">&nbsp;</td>
+          <td height="20" bgcolor="#395080">&nbsp;</td>
+          <td height="20" bgcolor="#395080" valign="middle" align="center" class="footer"><a href="#" class ="footer">&nbsp;</a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>
+

@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html><!-- #BeginTemplate "/Templates/template.dwt" -->
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>NetWork Components</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html;">
+<SCRIPT language=JavaScript> 
+function makeArray() {
+     for (i = 0; i<makeArray.arguments.length; i++)
+         this[i] = makeArray.arguments[i];
+ }
+ 
+function getFullYear(d) {
+    var y = d.getYear();
+    if (y < 1000) {y += 1900};
+    return y;
+}
+ 
+//var zone = "EDT";
+var days = new makeArray("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+var months = new makeArray("January","February","March","April","May","June","July","August","September","October","November","December");
+ 
+function format_time(t) {
+ 
+    var Day = t.getDay();
+    var Date = t.getDate();
+    var Month = t.getMonth();
+    var Year = t.getFullYear();
+ 
+    timeString = "";
+    timeString += days[Day];
+    timeString += ", ";
+    timeString += " ";
+    timeString += months[Month];
+    timeString += " ";
+    timeString += Date;
+    timeString += ", ";
+    timeString += " ";
+    timeString += Year;
+ 
+   return timeString;
+ }
+</SCRIPT>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td bgcolor="#395080" height="50" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td width="50%" valign="top"><img name="companyname" src="images/companyname.jpg" width="247" height="50" border="0"></td>
+          <td width="50%" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="15">
+              <tr> 
+                <td valign="top" align="right" class="menutext"> 
+                  <script language=JavaScript>
+			<!--
+			d = new Date();
+			document.write(format_time(d));
+			// -->
+		</script>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="98" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" width="82%"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+              <tr bgcolor="#EAEBE4"> 
+                <td height="73" valign="top" bgcolor="#EAEBE4"><img src="images/spacer.gif" width="1" height="73"></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="25" bgcolor="#395080" class="menutext" nowrap width="98%">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Home.html" class="menutext">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="AboutUS.html" class="menutext">About  Us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Gallery.html" class="menutext">Gallery </a>  
+                </td>
+                <td height="25" width="22" valign="bottom"><img name="triangle1" src="images/triangle1.jpg" width="22" height="25" border="0"></td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" align="right" width="340"><img name="graphic1" src="images/graphic1.jpg" width="340" height="98" border="0"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="72%" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr>
+          <td valign="top" width="152" bgcolor="#395080"> 
+            <table width="152" border="0" cellspacing="0" cellpadding="0" height="100%">
+              <tr> 
+                <td width="152" bgcolor="#395080" height="140" valign="top"><img name="graphic2" src="images/graphic2.jpg" width="152" height="128" border="0"></td>
+              </tr>
+              <tr> 
+                <td valign="top" bgcolor="#395080"> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3" height="100">
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td nowrap class="menutext"><a href="Data Communication.html"  class="menutext">Data Communication</a></td>
+                    </tr>
+                     <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="communication channels.html"  class="menutext">Communication Channels</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="transMedia.html" class="menutext">Transmission Media</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="Concentrators.html" class="menutext">Network Components 
+                        </a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="nettype.html" class="menutext">Network Type</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ICMP.html" class="menutext">ICMP</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ISDN.html" class="menutext">ISDN</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ISO OSI.html" class="menutext">ISO OSI Model</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="Modem.html" class="menutext">Modem</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="TCP & IP.html" class="menutext">TCP & IP</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="UDP.html" class="menutext">UDP</a></td>
+                    </tr>
+                    
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="InternetProtocol.html" class="menutext">IP Addresses</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ARP.html" class="menutext">ARP</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="RARP.html" class="menutext">RARP</a></td>
+                    </tr>
+                   
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" width="85%"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="20" height="100%">
+              <tr> 
+                <td valign="top" height="420" class="text"> <!-- #BeginEditable "content" -->
+                  <p><span class="title">IP Addresses </span> </p>
+                  <p class="normaltext">
+		IP addresses consist of a 32 bit number and is represented by the dot-decimal format.<br /> for example: 142.110.237.1 is an IP address.<br /> There are 4 decimal digits separated by three dots. Each digit is allowed the range of 0 to 255 which corresponds to 8 bits (one byte) of information.<br /> 
+A portion of an IP address represents the network address and the remaining portion the host address.<br /> For example: 142.110.237.<br />1 is the IP address of a firewall.<br /> The network that the firewall resided on is 142.110.237.0 (Note: IP addresses that end in a 0 represent network addresses).<br /> The host address of the firewall is 0.0.0.1 (Note: the network portion of the IP address is represented by 0s). Each host on the network and Internet must have a unique IP address. There are ways around having each host a unique IP address and they are discussed under firewalls. 
+The Network Information Center (NIC) assigns network addresses to the Internet.<br /> You must apply to receive a IP network address. Depending on the class (more on this later) of the IP address, you can then assign as many host IP addresses as allowed.<br /> 
+An alternative is to "rent" IP addresses from your local Internet Service Provider (ISP).<br /> They usually own the rights to a block of IP addresses and will rent them out for a fee.<br />
+
+
+            <table class="style1">
+                <tr>
+                    <td colspan="2" align="center">
+
+
+   <b>
+                        <br />
+                        Class A addresses</b> 
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        IP address range </td>
+                    <td>
+                        1.0.0.0 to 127.0.0.0</td>
+                </tr>
+                <tr>
+                    <td>
+                        Number of networks available:</td>
+                    <td>
+                        125 (see special addresses below)</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+	Number of hosts per network:
+</td>
+                    <td>
+                        16,777,214</td>
+                </tr>
+                <tr>
+                    <td>
+                       Net Mask:</td>
+                    <td>
+                       255.0.0.0  (first 8 bits are ones)</td>
+                </tr>
+                <tr>
+                    <td>
+                     Special Addresses:</td>
+                    <td>
+                        10.0.0.0 is used for networks not connected to the Internet</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+
+   <b>
+                        <br />
+                        Class B addresses<br />
+                        </b></td>
+                </tr>
+                <tr>
+                    <td>
+                       IP address range</td>
+                    <td>
+                       
+	128.0.0.0 to 191.0.0.0
+</td>
+                </tr>
+                <tr>
+               
+                    <td>
+                    Number of networks available:
+                      </td>
+                    <td>16,382 (see special addresses below)
+
+
+                     </td>
+                </tr>
+                <tr>
+                    <td>
+                      Number of hosts per network:</td>
+                    <td>
+                        65,534</td>
+                </tr>
+                <tr>
+                    <td>
+                        Net Mask:</td>
+                    <td>
+                        255.255.0.0	(first 16 bits are ones)</td>
+                </tr>
+                <tr>
+                    <td>
+                       Special Addresses:</td>
+                    <td>
+                        172.16.0.0 to 172.31.0.0 are used for networks no connected to the Internet
+</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                       <b>
+                        <br />
+                        Class C addresses 
+                        <br />
+                        </b></td>
+                </tr>
+                <tr>
+                    <td>
+                        IP address range </td>
+                    <td>
+                       192.0.0.0 to 223.0.0.0</td>
+                </tr>
+                <tr>
+                    <td>
+                       Number of networks available:</td>
+                    <td>
+                       2,097,150 (see special addresses below)</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+	Number of hosts per network:
+</td>
+                    <td>
+                       254</td>
+                </tr>
+                <tr>
+                    <td>
+                     Net Mask:</td>
+                    <td>
+                        255.255.255.0	(first 24 bits are ones)</td>
+                </tr>
+                <tr>
+                    <td>
+                        Special Addresses:</td>
+                    <td>
+                       192.168.1.0 to 192.168.255.0 are used for networks not connected to the Internet
+</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                      <b> 
+                        <br />
+                        Class D Addresses 
+                        <br />
+                        </b></td>
+                </tr>
+                <tr>
+                    <td>
+                       IP address range </td>
+                    <td>
+                        224.0.0.0 to 239.0.0.0</td>
+                </tr>
+                <tr>
+                    <td>
+                        
+	Use:
+</td>
+                    <td>
+                       Multicasting addresses</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <b>
+                        <br />
+                        Class E Addresses 
+                        <br />
+                        </b></td>
+                </tr>
+                <tr>
+                    <td>
+                        IP address range </td>
+                    <td>
+                     240.0.0.0 to 255.0.0.0</td>
+                </tr>
+                <tr>
+                    <td>
+                       Use:</td>
+                    <td>
+                        Reserved by the Internet for its own use.</td>
+                </tr>
+                
+            </table>
+
+
+	
+
+		</p>
+                                       
+                  <!-- #EndEditable --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="43" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="43">
+        <tr> 
+          <td width="152" height="23" bgcolor="#395080"><img src="images/spacer.gif" width="152" height="8"></td>
+          <td height="23" width="19" valign="top" align="right" bgcolor="#395080"><img name="triangle2" src="images/triangle2.jpg" width="25" height="25" border="0"></td>
+          <td height="23" bgcolor="#EAEBE4" width="92%" class="text" align="center" valign="middle" nowrap>
+           <a href="#" class="text">Web Design By :- Ansh Gupta, BTech CSE(AIML) MRSPTU, Bathinda</a> 
+            </td>
+        </tr>
+        <tr> 
+          <td height="20" bgcolor="#395080">&nbsp;</td>
+          <td height="20" bgcolor="#395080">&nbsp;</td>
+          <td height="20" bgcolor="#395080" valign="middle" align="center" class="footer"><a href="#" class ="footer">&nbsp;</a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>

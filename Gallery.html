@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html><!-- #BeginTemplate "/Templates/template.dwt" -->
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>NetWork Components</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html;">
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<SCRIPT language=JavaScript> 
+function makeArray() {
+     for (i = 0; i<makeArray.arguments.length; i++)
+         this[i] = makeArray.arguments[i];
+ }
+ 
+function getFullYear(d) {
+    var y = d.getYear();
+    if (y < 1000) {y += 1900};
+    return y;
+}
+ 
+//var zone = "EDT";
+var days = new makeArray("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+var months = new makeArray("January","February","March","April","May","June","July","August","September","October","November","December");
+ 
+function format_time(t) {
+ 
+    var Day = t.getDay();
+    var Date = t.getDate();
+    var Month = t.getMonth();
+    var Year = t.getFullYear();
+ 
+    timeString = "";
+    timeString += days[Day];
+    timeString += ", ";
+    timeString += " ";
+    timeString += months[Month];
+    timeString += " ";
+    timeString += Date;
+    timeString += ", ";
+    timeString += " ";
+    timeString += Year;
+ 
+   return timeString;
+ }
+</SCRIPT>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td bgcolor="#395080" height="50" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td width="50%" valign="top"><img name="companyname" src="images/companyname.jpg" width="247" height="50" border="0"></td>
+          <td width="50%" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="15">
+              <tr> 
+                <td valign="top" align="right" class="menutext"> 
+                  <script language=JavaScript>
+			<!--
+			d = new Date();
+			document.write(format_time(d));
+			// -->
+		</script>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="98" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" width="82%"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+              <tr bgcolor="#EAEBE4"> 
+                <td height="73" valign="top" bgcolor="#EAEBE4"><img src="images/spacer.gif" width="1" height="73"></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="25" bgcolor="#395080" class="menutext" nowrap width="98%">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Home.html" class="menutext">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="AboutUS.html" class="menutext">About  Us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Gallery.html" class="menutext">Gallery </a> 
+                </td>
+                <td height="25" width="22" valign="bottom"><img name="triangle1" src="images/triangle1.jpg" width="22" height="25" border="0"></td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" align="right" width="340"><img name="graphic1" src="images/graphic1.jpg" width="340" height="98" border="0"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="72%" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr>
+          <td valign="top" width="152" bgcolor="#395080"> 
+            <table width="152" border="0" cellspacing="0" cellpadding="0" height="100%">
+              <tr> 
+                <td width="152" bgcolor="#395080" height="140" valign="top"><img name="graphic2" src="images/graphic2.jpg" width="152" height="128" border="0"></td>
+              </tr>
+              <tr> 
+                <td valign="top" bgcolor="#395080"> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3" height="100">
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td nowrap class="menutext"><a href="Data Communication.html"  class="menutext">Data Communication</a></td>
+                    </tr>
+                     <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="communication channels.html"  class="menutext">Communication Channels</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="transMedia.html" class="menutext">Transmission Media</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="Concentrators.html" class="menutext">Network Components 
+                        </a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="nettype.html" class="menutext">Network Type</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ICMP.html" class="menutext">ICMP</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ISDN.html" class="menutext">ISDN</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ISOOSI.html" class="menutext">ISO OSI Model</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="Modem.html" class="menutext">Modem</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="TCP & IP.html" class="menutext">TCP & IP</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="UDP.html" class="menutext">UDP</a></td>
+                    </tr>
+                    
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="InternetProtocol.html" class="menutext">IP Addresses</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ARP.html" class="menutext">ARP</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="RARP.html" class="menutext">RARP</a></td>
+                    </tr>
+                   
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" width="85%"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="20" height="100%">
+              <tr> 
+                <td valign="top" height="420" class="text"> <!-- #BeginEditable "content" -->
+                  <p><span class="title">Gallery </span> </p>
+                  <p class="normaltext">
+<table style="width: 600px" align="center" border="5" cellspacing="0" bordercolor="maroon">
+<tr style="text-align:center">
+<td > 
+	<a href="images\1.jpg" rel="lightbox[roadtrip]"><img src="images\1.jpg" height="125px" width="125px" border="0"></a> 
+</td>
+<td> 
+	<a href="images\2.jpg" rel="lightbox[roadtrip]"><img src="images\2.jpg" height="125px" width="125px" border="0"></a>  
+</td>
+<td> 
+	<a href="images\3.jpg" rel="lightbox[roadtrip]"><img src="images\3.jpg" height="125px" width="125px" border="0"></a>   
+</td>
+<td> 
+	<a href="images\4.jpg" rel="lightbox[roadtrip]"><img src="images\4.jpg" height="125px" width="125px" border="0"></a>  
+</td>
+</tr>
+<tr style="text-align:center">
+<td > 
+	<a href="images\5.jpg" rel="lightbox[roadtrip]"><img src="images\5.jpg" height="125px" width="125px" border="0"></a> 
+</td>
+<td> 
+	<a href="images\6.jpg" rel="lightbox[roadtrip]"><img src="images\6.jpg" height="125px" width="125px" border="0"></a>  
+</td>
+<td> 
+	<a href="images\21.jpg" rel="lightbox[roadtrip]"><img src="images\21.jpg" height="125px" width="125px" border="0"></a>   
+</td>
+<td> 
+	<a href="images\8.jpg" rel="lightbox[roadtrip]"><img src="images\8.jpg" height="125px" width="125px" border="0"></a>  
+</td>
+</tr>
+<tr style="text-align:center">
+<td > 
+	<a href="images\10.jpg" rel="lightbox[roadtrip]"><img src="images\10.jpg" height="125px" width="125px" border="0"></a> 
+</td>
+<td> 
+	<a href="images\9.jpg" rel="lightbox[roadtrip]"><img src="images\9.jpg" height="125px" width="125px" border="0"></a>  
+</td>
+<td> 
+	<a href="images\11.jpg" rel="lightbox[roadtrip]"><img src="images\11.jpg" height="125px" width="125px" border="0"></a>   
+</td>
+<td> 
+	<a href="images\12.jpg" rel="lightbox[roadtrip]"><img src="images\12.jpg" height="125px" width="125px" border="0"></a>  
+</td>
+</tr>
+<tr style="text-align:center">
+<td > 
+	<a href="images\13.jpg" rel="lightbox[roadtrip]"><img src="images\13.jpg" height="125px" width="125px" border="0"></a> 
+</td>
+<td> 
+	<a href="images\14.jpg" rel="lightbox[roadtrip]"><img src="images\14.jpg" height="125px" width="125px" border="0"></a>  
+</td>
+<td> 
+	<a href="images\15.jpg" rel="lightbox[roadtrip]"><img src="images\15.jpg" height="125px" width="125px" border="0"></a>   
+</td>
+<td> 
+	<a href="images\16.jpg" rel="lightbox[roadtrip]"><img src="images\16.jpg" height="125px" width="125px" border="0"></a>  
+</td>
+</tr>
+<tr style="text-align:center">
+<td > 
+	<a href="images\17.jpg" rel="lightbox[roadtrip]"><img src="images\17.jpg" height="125px" width="125px" border="0"></a> 
+</td>
+<td> 
+	<a href="images\18.jpg" rel="lightbox[roadtrip]"><img src="images\18.jpg" height="125px" width="125px" border="0"></a>  
+</td>
+<td> 
+	<a href="images\19.jpg" rel="lightbox[roadtrip]"><img src="images\19.jpg" height="125px" width="125px" border="0"></a>   
+</td>
+<td> 
+	<a href="images\20.jpg" rel="lightbox[roadtrip]"><img src="images\20.jpg" height="125px" width="125px" border="0"></a>  
+</td>
+</tr>
+ </table>
+
+		</p>
+                                       
+                  <!-- #EndEditable --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="43" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="43">
+        <tr> 
+          <td width="152" height="23" bgcolor="#395080"><img src="images/spacer.gif" width="152" height="8"></td>
+          <td height="23" width="19" valign="top" align="right" bgcolor="#395080"><img name="triangle2" src="images/triangle2.jpg" width="25" height="25" border="0"></td>
+          <td height="23" bgcolor="#EAEBE4" width="92%" class="text" align="center" valign="middle" nowrap>
+         <a href="#" class="text">Web Design By :- Ansh Gupta, BTech CSE(AIML) MRSPTU, Bathinda</a> 
+            </td>
+        </tr>
+        <tr> 
+          <td height="20" bgcolor="#395080">&nbsp;</td>
+          <td height="20" bgcolor="#395080">&nbsp;</td>
+          <td height="20" bgcolor="#395080" valign="middle" align="center" class="footer"><a href="#" class ="footer">&nbsp;</a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>
+

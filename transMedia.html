@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html><!-- #BeginTemplate "/Templates/template.dwt" -->
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>Network Components</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html;">
+<SCRIPT language=JavaScript> 
+function makeArray() {
+     for (i = 0; i<makeArray.arguments.length; i++)
+         this[i] = makeArray.arguments[i];
+ }
+ 
+function getFullYear(d) {
+    var y = d.getYear();
+    if (y < 1000) {y += 1900};
+    return y;
+}
+ 
+//var zone = "EDT";
+var days = new makeArray("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+var months = new makeArray("January","February","March","April","May","June","July","August","September","October","November","December");
+ 
+function format_time(t) {
+ 
+    var Day = t.getDay();
+    var Date = t.getDate();
+    var Month = t.getMonth();
+    var Year = t.getFullYear();
+ 
+    timeString = "";
+    timeString += days[Day];
+    timeString += ", ";
+    timeString += " ";
+    timeString += months[Month];
+    timeString += " ";
+    timeString += Date;
+    timeString += ", ";
+    timeString += " ";
+    timeString += Year;
+ 
+   return timeString;
+ }
+</SCRIPT>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td bgcolor="#395080" height="50" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td width="50%" valign="top"><img name="companyname" src="images/companyname.jpg" width="247" height="50" border="0"></td>
+          <td width="50%" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="15">
+              <tr> 
+                <td valign="top" align="right" class="menutext"> 
+                  <script language=JavaScript>
+			<!--
+			d = new Date();
+			document.write(format_time(d));
+			// -->
+		</script>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="98" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" width="82%"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+              <tr bgcolor="#EAEBE4"> 
+                <td height="73" valign="top" bgcolor="#EAEBE4"><img src="images/spacer.gif" width="1" height="73"></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="25" bgcolor="#395080" class="menutext" nowrap width="98%">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Home.html" class="menutext">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="AboutUS.html" class="menutext">About  Us</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="Gallery.html" class="menutext">Gallery </a> 
+                </td>
+                <td height="25" width="22" valign="bottom"><img name="triangle1" src="images/triangle1.jpg" width="22" height="25" border="0"></td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" align="right" width="340"><img name="graphic1" src="images/graphic1.jpg" width="340" height="98" border="0"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="72%" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr>
+          <td valign="top" width="152" bgcolor="#395080"> 
+            <table width="152" border="0" cellspacing="0" cellpadding="0" height="100%">
+              <tr> 
+                <td width="152" bgcolor="#395080" height="140" valign="top"><img name="graphic2" src="images/graphic2.jpg" width="152" height="128" border="0"></td>
+              </tr>
+              <tr> 
+                <td valign="top" bgcolor="#395080"> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3" height="100">
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td nowrap class="menutext"><a href="Data Communication.html"  class="menutext">Data Communication</a></td>
+                    </tr>
+                     <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="communication channels.html"  class="menutext">Communication Channels</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="transMedia.html" class="menutext">Transmission Media</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="Concentrators.html" class="menutext">Network Components 
+                        </a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="nettype.html" class="menutext">Network Type</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ICMP.html" class="menutext">ICMP</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ISDN.html" class="menutext">ISDN</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ISO OSI.html" class="menutext">ISO OSI Model</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="Modem.html" class="menutext">Modem</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="TCP & IP.html" class="menutext">TCP & IP</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="UDP.html" class="menutext">UDP</a></td>
+                    </tr>
+                    
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="InternetProtocol.html" class="menutext">IP Addresses</a></td>
+                    </tr>
+                       <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ARP.html" class="menutext">ARP</a></td>
+                    </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="RARP.html" class="menutext">RARP</a></td>
+                    </tr>
+                   
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" width="85%"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="20" height="100%">
+              <tr> 
+                <td valign="top" height="420" class="text"> <!-- #BeginEditable "content" -->
+                  <p><span class="title"> Transmission Media - Guided  </span> </p>
+                
+	 
+		<p class="normaltext">
+There are 2 basic categories of Transmission Media: <br >
+
+Guided and <br >
+Unguided. <br >
+Guided Transmission Media uses a "cabling" system that guides the data signals along a specific path. The data signals are bound by the "cabling" system. Guided Media is also known as Bound Media. Cabling is meant in a generic sense in the previous sentences and is not meant to be interpreted as copper wire cabling only. <br >
+Unguided Transmission Media consists of a means for the data signals to travel but nothing to guide them along a specific path. The data signals are not bound to a cabling media and as such are often called Unbound Media. <br ><br >
+There 4 basic types of Guided Media:<br >
+
+
+
+		</p>
+		<ul style ="margin-left :30px">
+		
+		<li>Open Wire</li>
+		<li>Twisted Pair </li>
+		<li>Coaxial Cable</li>
+		<li >Optical Fibre </li>
+		</ul> 
+		<p class="title">
+		Open Wire
+		</p>
+		<p class="normaltext">
+		Open Wire is traditionally used to describe the electrical wire strung along power poles. There is a single wire strung between poles. No shielding or protection from noise interference is used. We are going to extend the traditional definition of Open Wire to include any data signal path without shielding or protection from noise interference. This can include multiconductor cables or single wires. This media is susceptible to a large degree of noise and interference and consequently not acceptable for data transmission except for short distances under 20 ft
+<center><img src="images/opebwire.jpg"></center>
+</p> 
+ <p class="title">
+		Twisted Pair
+		</p>
+		<p class="normaltext">
+The wires in Twisted Pair cabling are twisted together in pairs. Each pair would consist of a wire used for the +ve data signal and a wire used for the -ve data signal. Any noise that appears on 1 wire of the pair would occur on the other wire. Because the wires are opposite polarities, they are 180 degrees out of phase (180 degrees - phasor definition of opposite polarity). When the noise appears on both wires, it cancels or nulls itself out at the receiving end. Twisted Pair cables are most effectively used in systems that use a balanced line method of transmission: polar line coding (Manchester Encoding) as opposed to unipolar line coding (TTL logic).
+<center><img src="images/TwistedPair.jpg"></center>
+The degree of reduction in noise interference is determined specifically by the number of turns per foot. Increasing the number of turns per foot reduces the noise interference. To further improve noise rejection, a foil or wire braid shield is woven around the twisted pairs. This "shield" can be woven around individual pairs or around a multi-pair conductor (several pairs). <br >
+<center><img src="images/ShieldTwistedPair.jpg"></center>
+Cables with a shield are called Shielded Twisted Pair and commonly abbreviated STP. Cables without a shield are called Unshielded Twisted Pair or UTP. Twisting the wires together results in a characteristic impedance for the cable. A typical impedance for UTP is 100 ohm for Ethernet 10BaseT cable. <br >
+UTP or Unshielded Twisted Pair cable is used on Ethernet 10BaseT and can also be used with Token Ring. It uses the RJ line of connectors (RJ45, RJ11, etc..)<br >
+STP or Shielded Twisted Pair is used with the traditional Token Ring cabling or ICS - IBM Cabling System. It requires a custom connector. IBM STP (Shielded Twisted Pair) has a characteristic impedance of 150 ohms.<br >
+
+</p> 
+
+<p class="title">
+		Coaxial Cable
+		</p>
+		<p class="normaltext">
+Coaxial Cable consists of 2 conductors. The inner conductor is held inside an insulator with the other conductor woven around it providing a shield. An insulating protective coating called a jacket covers the outer conductor.
+<center><img src="images/13.jpg"></center>
+The outer shield protects the inner conductor from outside electrical signals. The distance between the outer conductor (shield) and inner conductor plus the type of material used for insulating the inner conductor determine the cable properties or impedance. Typical impedances for coaxial cables are 75 ohms for Cable TV, 50 ohms for Ethernet Thinnet and Thicknet. The excellent control of the impedance characteristics of the cable allow higher data rates to be transferred than Twisted Pair cable. <br>
+</p> 
+<p class="title">
+		Optical Fibre
+		</p>
+		<p class="normaltext">
+Optical Fibre consists of thin glass fibres that can carry information at frequencies in the visible light spectrum and beyond. The typical optical fibre consists of a very narrow strand of glass called the Core. Around the Core is a concentric layer of glass called the Cladding. A typical Core diameter is 62.5 microns (1 micron = 10-6 meters). Typically Cladding has a diameter of 125 microns. Coating the cladding is a protective coating consisting of plastic, it is called the Jacket.
+<center><img src="images/opticalfiber.jpg"></center>
+</ p> 
+<p class="title">
+<span class="title"> Transmission Media - Guided  </span></p>
+		<p class="normaltext">
+Unguided Transmission Media is data signals that flow through the air. They are not guided or bound to a channel to follow. They are classified by the type of wave propagation<br >
+There 3 basic types of UnGuided Media:<br >
+
+
+
+		</p>
+		<ul style ="margin-left :30px">
+<li>Radio Frequencies	</li>
+<li>Microwave	</li>
+<li>Satellite	</li>
+		</ul>
+		<p class="title">
+  Radio Frequencies</p>
+		<p class="normaltext">
+Radio Frequencies are in the range of 300 kHz to 10 GHz. We are seeing an emerging technology called wireless LANs. Some use radio frequencies to connect the workstations together, some use infrared technology.
+</ p><p class="title">
+Microwave</p>
+		<p class="normaltext">
+Microwave transmission is line of sight transmission. The Transmit station must be in visible contact with the receive station. This sets a limit on the distance between stations depending on the local geography. Typically the line of sight due to the Earth's curvature is only 50 km to the horizon! Repeater stations must be placed so the data signal can hop, skip and jump across the country. </ p>
+		<p class="title">
+Satellite</p>
+		<p class="normaltext">
+Satellites are transponders that are set in a geostationary orbit directly over the equator. A transponder is a unit that receives on one frequency and retransmits on another. The geostationary orbit is 36,000 km from the Earth's surface. At this point, the gravitational pull of the Earth and the centrifugal force of Earths rotation are balanced and cancel each other out. Centrifugal force is the rotational force placed on the satellite that wants to fling it out to space</p>
+
+
+
+                  <!-- #EndEditable --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="43" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="43">
+        <tr> 
+          <td width="152" height="23" bgcolor="#395080"><img src="images/spacer.gif" width="152" height="8"></td>
+          <td height="23" width="19" valign="top" align="right" bgcolor="#395080"><img name="triangle2" src="images/triangle2.jpg" width="25" height="25" border="0"></td>
+          <td height="23" bgcolor="#EAEBE4" width="92%" class="text" align="center" valign="middle" nowrap>
+           <a href="#" class="text">Web Design By :- Ansh Gupta, BTech CSE(AIML) MRSPTU, Bathinda</a> 
+            </td>
+        </tr>
+        <tr> 
+          <td height="20" bgcolor="#395080">&nbsp;</td>
+          <td height="20" bgcolor="#395080">&nbsp;</td>
+          <td height="20" bgcolor="#395080" valign="middle" align="center" class="footer"><a href="#" class ="footer">&nbsp;</a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>
